@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Panel } from "../panel/panel";
+import { Title } from "../../title/title";
 
 export const StateHoister = () => {
   const [activePanel, setActivePanel] = useState<number>(0);
   return (
     <div>
-      <h1>
+      <Title>
         Shows <i>shared state</i> and <i>conditional rendering</i>
-      </h1>
+      </Title>
       <Panel
         title="First panel title"
         content="First Panel content"
